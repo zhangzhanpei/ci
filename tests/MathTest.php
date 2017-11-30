@@ -9,4 +9,11 @@ class MathTest extends TestCase
         $m = new Math();
         $this->assertEquals(3, $m->add(1, 2));
     }
+
+    public function testDevide()
+    {
+        $m = new Math();
+        $this->assertEquals(-1, $m->devide(1, 0));
+        $this->assertEquals(3, $m->devide(6, 2));
+    }
 }
